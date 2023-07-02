@@ -24,7 +24,7 @@ fi
 date="$(date +%d%m%Y-%I%M)"
 
 #sync with kerenSU
-#curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
+curl -LSs "https://raw.githubusercontent.com/tiann/KernelSU/main/kernel/setup.sh" | bash -s main
 
 cp sepolicy.c $(pwd)/KernelSU/kernel/selinux/
 echo "***Building ...***"
